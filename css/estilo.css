@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 165%;
+    min-height: 100vh;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #f9f9f9;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    color: #f9f9f9;
+}
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #f9f9f9;
+}
+
+/** header **/
+header .navbar-brand {
+    transition: 0.3s
+}
+header .navbar-brand:hover {
+    transform: translateY(-10px);
+}
+
+header .nav-item {
+    transition: 0.3s
+}
+header .nav-item:hover {
+    transform: translateY(-10px);
+}
+
+
+/** main **/
+main .boton {
+    background-color: transparent;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+    width: 35%;
+    transition: 0.3s
+}
+main .boton:hover{
+    transform: translateY(-10px);
+    background-color: #fff;
+    color: #000
+}
+
+/** mapa **/
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom: 765px;
+    position:relative;
+	height:0;
+}
+
+.map-responsive iframe{
+    padding: 2rem;
+	height: 100%;
+	width:100%;
+	position:absolute;
+}
+
+/*--  large devices, desktops, 1200px y +  --*/
+@media (max-width: 1200px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/*--  large devices desktops, 992px y +  --*/
+@media (max-width: 992px) {}
+
+/*--  medium devices, tablets, 768px y +  --*/
+@media (max-width: 768px) {}
+
+/*--  small devices, phones, 576px y +  --*/
+@media (max-width: 576px) {
+    footer {
+        font-size: 12px;
+    }
+}
