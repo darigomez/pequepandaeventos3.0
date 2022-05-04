@@ -4,7 +4,19 @@
 	box-sizing: border-box;
 }
 
+// IMPORTS
+@import "media";
+@import "mapa";
+
+// VARIABLES
 $color-claro: #f9f9f9;
+$font: 'Montserrat', sans-serif;
+
+// MIXIN
+
+@mixin ibmplex {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
 
 body{
     background-color: #FF9A8B;
@@ -16,18 +28,18 @@ body{
     min-height: 100vh;
 }
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font;
     color: $color-claro;
 }
 a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font;
     color: $color-claro;
 }
 p{
-    font-family: 'IBM Plex Sans', sans-serif;
+    @include ibmplex;
 }
 h2{
-    font-family: 'IBM Plex Sans', sans-serif;
+    @include ibmplex;
     color: $color-claro;
 }
 
@@ -57,6 +69,3 @@ main {
         color: #000
     }
 }
-
-@import "media";
-@import "mapa";
