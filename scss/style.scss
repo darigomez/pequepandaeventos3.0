@@ -37,6 +37,7 @@ a{
 }
 p{
     @include ibmplex;
+    font-size: 20px
 }
 h2{
     @include ibmplex;
